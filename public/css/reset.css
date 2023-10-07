@@ -1,0 +1,132 @@
+@media (prefers-reduced-motion: reduce){
+  html:focus-within{
+    scroll-behavior: auto;
+	}
+  *{
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+	} 
+	*::before, *::after{
+		-webkit-animation-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		-webkit-animation-iteration-count: 1 !important;
+		animation-iteration-count: 1 !important;
+		-webkit-transition-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+html, div, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, svg {
+	margin: 0;
+	scroll-behavior: auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	transition: all 0.3s ease-in-out;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	color: inherit;
+	text-decoration: inherit;
+	display: block;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0 100px rgb(255, 255, 255) inset !important;
+	background: rgba(255, 255, 255, 0);
+}	
+
+button{
+	color: #000;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+input {
+  border-radius: 0;
+}
+
+textarea {
+  border-radius: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+	appearance: none;
+}
+
+
+::-webkit-scrollbar-thumb {
+	--tw-border-opacity: 1;
+	background-color: rgb(142 155 180 / 0.8);
+	border-color: rgba(255,255,255,var(--tw-border-opacity));
+	border-radius: 9999px;
+	border-width: 1px;
+}
+
+::-webkit-scrollbar {
+	height: 1rem;
+	width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+	border-radius: 9999px;
+}

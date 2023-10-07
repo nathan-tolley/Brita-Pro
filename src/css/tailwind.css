@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .testimonial{
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    gap: 8px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    background: #ebebeb;
+    box-shadow:  20px 20px 40px #dfdfdf,
+             -20px -20px 40px #f7f7f7;
+  }
+
+  .card {
+    box-sizing: border-box;
+    width: 247px;
+    height: 330px;
+    background: #e5e5e5;
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+  }
+  
+  .card:hover {
+    border: 1px solid rgb(165 180 209);
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+  
+  .card .card__arrow {
+    position: absolute;
+    background: #a5b4d1;
+    padding: 0.6rem;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 17px;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card:hover .card__arrow {
+    background: #353535;
+  }
+  
+  .card:hover .card__arrow svg {
+    transform: translateX(3px);
+  }
+}
