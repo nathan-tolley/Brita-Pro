@@ -10,7 +10,7 @@ module.exports = {
         ],
         'testimonials-tablet': [
           'test1 test2',
-          'test4 test3',
+          'test3 test5',
         ],
         'testimonials-phone': [
           'test1',
@@ -34,10 +34,10 @@ module.exports = {
           '1fr 1fr',
         ],
         'testimonials-tablet': [
-          '1fr 1fr',
+          'max-content max-content',
         ],
         'testimonials-phone': [
-          '1fr 1fr 1fr',
+          'max-content max-content max-content',
         ],
       },
       margin:{
